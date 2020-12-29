@@ -28,10 +28,11 @@ Eb/N0 noise_standard_deviation block_error_rate ML_block_error_rate
 ### Code specification format
 Here we introduce the code specification file format for polar subcodes with mixed kernels
 ```
-<Length> <Dimension> <Minimum distance> <Number of layers> <Number of shortened symbols> <Number of shortened symbols> // Minimum distance can be set to zero
+<Length> <Dimension> <Minimum distance> <Number of layers> <Number of shortened symbols> <Number of punctured symbols> // Minimum distance can be set to zero
 <Kernel_Name_1> <Kernel_Name_2> ... <Kernel_Name_lambda> //lambda is a number of layers
-
-// R = Length - Dimension dynamic frozen symbols (DFS)
+<Indices of shortened symbols>
+<Indices of punctured symbols>
+// R = (Length - Dimension) dynamic frozen symbols (DFS)
 // The DFS is the constraint of the form u_i = u_{j_1} + u_{j_2} + u_{j_3} + ... + u_{j_w}, where all j_r < i
 <w+1> <j_1> <j_2> ... <j_w> <i>
 // Static frozen symbol i are represented as 
@@ -53,4 +54,4 @@ Trofimiuk32_342 Trofimiuk32_342
 * `Trofimiuk16_345` - 16 x 16 kernel `K_16`
 * `Trofimiuk32_342` - 32 x 32 kernel `K_32`
 
-This implementation does not support mixed kernels, shortening and puncturing. We introduce these parameters for future implementations
+This implementation does not support mixed kernels, shortening and puncturing. These features will be implemented in future releases
