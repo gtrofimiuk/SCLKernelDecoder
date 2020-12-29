@@ -13,7 +13,7 @@ The simulation program runs from the command line:
 SCLKernelDecoder code_specification_file ListSize Eb/N0 MaxErrors MaxIterations
 ```
 * `MaxIterations` is a maximal number of iterations performed by the decoder
-* The simulation continues until `MaxErrors` decoding errors occurs
+* The simulation continues until `MaxErrors` decoding errors occur
 
 ### Example usage
 ```
@@ -53,4 +53,4 @@ Trofimiuk32_342 Trofimiuk32_342
 * `Trofimiuk16_345` - 16 x 16 kernel `K_16`
 * `Trofimiuk32_342` - 32 x 32 kernel `K_32`
 
-This implementation does not support mixed kernels, shortening and puncturing. We introduce these parameters for futher implementations
+This implementation does not support mixed kernels, shortening and puncturing. We introduce these parameters for future implementations
