@@ -17,7 +17,7 @@ SCLKernelDecoder code_specification_file ListSize Eb/N0 MaxErrors MaxIterations
 
 ### Example usage
 ```
-SCLKernelDecoder.exe 1024_512_Trofimiuk32_342.mpec 8 1.75 100 1000000
+SCLKernelDecoder.exe 1024_512_Trofimiuk32_342_subcode.mpec 8 1.75 100 1000000
 ```
 
 ### Output line
