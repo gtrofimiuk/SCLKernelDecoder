@@ -1,5 +1,5 @@
 # SCLKernelDecoder
-This is a C++ implementation of the window processing algorithm for `K_16` and `K_32` kernels from https://arxiv.org/abs/2010.07884. Kernel processors are embedded in [SCL](https://ieeexplore.ieee.org/document/7055304) decoder. This implementation also supports the decoding of [polar subcodes](https://ieeexplore.ieee.org/document/7339451). Simulations run in AWGN channel
+This is a C++ implementation of the window processing algorithm for `K_16` and `K_32` kernels from paper [Window Processing of Binary Polarization Kernels](https://ieeexplore.ieee.org/document/9400869) (also avaliable at [ArXiv](https://arxiv.org/abs/2010.07884)). Kernel processors are embedded in [SCL](https://ieeexplore.ieee.org/document/7055304) decoder. This implementation also supports the decoding of [polar subcodes](https://ieeexplore.ieee.org/document/7339451). Simulations run in AWGN channel
 
 ## Build
 
